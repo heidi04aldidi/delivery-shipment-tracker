@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import "./App.css";
 
-const API = "http://localhost:5001/api";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5001/api";
 
 const STATUS_ORDER = ["Pending", "Picked Up", "In Transit", "Delivered", "Cancelled"];
 
